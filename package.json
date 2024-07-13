@@ -2,6 +2,7 @@
   "name": "chrisvideoapp",
   "main": "expo-router/entry",
   "version": "1.0.0",
+  "proxy": "http://localhost:8081/",
   "scripts": {
     "start": "expo start",
     "reset-project": "node ./scripts/reset-project.js",
@@ -25,6 +26,7 @@
     "expo-splash-screen": "~0.27.5",
     "expo-status-bar": "~1.12.1",
     "expo-system-ui": "~3.0.6",
+    "expo-video": "^1.2.1",
     "expo-web-browser": "~13.0.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",

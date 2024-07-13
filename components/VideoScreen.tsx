@@ -2,12 +2,12 @@ import { useVideoPlayer, VideoView } from 'expo-video';
 import { useEffect, useRef, useState } from 'react';
 import { PixelRatio, StyleSheet, View, Button } from 'react-native';
 
-const videoSource =
-//   'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4';
-  'https://video-content-bucket-1.s3.us-east-1.amazonaws.com/movies/2012.mp4';
+// const videoSource =
+// //   'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4';
+//   'https://video-content-bucket-1.s3.us-east-1.amazonaws.com/movies/2012.mp4';
 
 
-export default function VideoScreen() {
+export default function VideoScreen({videoSource}: {videoSource: string}) {
   const ref = useRef(null);
   const [isPlaying, setIsPlaying] = useState(true);
   const player = useVideoPlayer(videoSource, player => {
